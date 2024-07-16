@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumão Programação ICP</title>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media_query.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <header>
+        <h1>Resumão - Programação ICP</h1>
+        <p>Você vai encontrar neste site tudo o que precisa para dominar as várias linguagens de programação que será vista ao longo do curso de programação de forma simples e acessível. Este site oferece resumos diretos de cada linguagem, contendo exemplos práticos e imagens para ajudar você a entender melhor.</p>
+    </header>
+    <main>
+        Serão vistas oito linguagens ao longo do curso. Selecione alguma opção a seguir para mais detalhes.
+        <div class="linguagens">
+            <p>
+                <button onclick="mostrar('bloco')">Bloco</button>
+                <button onclick="mostrar('c')">C++</button>
+                <button onclick="mostrar('html')">HTML</button>
+                <button onclick="mostrar('css')">CSS</button>
+            </p>
+            <p>
+                <button onclick="mostrar('javascript')">JavaScript</button>
+                <button onclick="mostrar('php')">PHP</button>
+                <button onclick="mostrar('mysql')">MySQL</button>
+                <button onclick="mostrar('python')">Python</button>
+            </p>
+        </div>
+        <div id="bloco" class="linguagem active">
+            <h2>Bloco</h2>
+            <h3>Introdução</h3>
+            <p>Programação em bloco é um paradigma de programação onde o código é estruturado em blocos, facilitando a leitura e a organização do código. Cada bloco pode conter declarações, variáveis e outras estruturas de controle. Este conceito é fundamental na maioria das linguagens de programação modernas e é especialmente útil para criar programas complexos de maneira mais gerenciável.</p>
+        </div>
+        <div id="c" class="linguagem">
+            <h2>C++</h2>
+            <p>Conteúdo sobre a Linguagem 2...</p>
+        </div>
+        <div id="html" class="linguagem">
+            <h2>HTML</h2>
+            <p>Conteúdo sobre a Linguagem 3...</p>
+        </div>
+        <div id="css" class="linguagem">
+            <h2>CSS</h2>
+            <p>Conteúdo sobre a Linguagem 4...</p>
+        </div>
+        <div id="javascript" class="linguagem">
+            <h2>JavaScript</h2>
+            <p>Conteúdo sobre a Linguagem 5...</p>
+        </div>
+        <div id="php" class="linguagem">
+            <h2>PHP</h2>
+            <p>Conteúdo sobre a Linguagem 6...</p>
+        </div>
+        <div id="mysql" class="linguagem">
+            <h2>MySQL</h2>
+            <p>Conteúdo sobre a Linguagem 7...</p>
+        </div>
+        <div id="python" class="linguagem">
+            <h2>Python</h2>
+            <p>Conteúdo sobre a Linguagem 8...</p>
+        </div>
+        <script>
+            function mostrar(idLinguagem) {
+                $('.linguagem.active').slideUp(300, function() {
+                    $(this).removeClass('active');
+                    $('#' + idLinguagem).slideDown(300).addClass('active');
+                });
+            }
+        </script>
+    </main>
+    <footer>
+        Desenvolvido por <a href="https://github.com/victorrpessoa" target="_blank">Victor R Pessoa</a>
+    </footer>
+</body>
+</html>
