@@ -1,13 +1,27 @@
 @charset "UTF-8";
 
-body {
+main {
     font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    border: 1px solid black;
+}
+table, td {
+    text-align: center;
+
+}
+.imgbloco {
+    width: 90%;
+    margin-top: -20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 .linguagem {
     display: none;
 }
 .linguagens button {
-    text-align: center;
+    margin: 3px 1px 3px 1px;
     width: 120px;
     padding: 10px;
     cursor: pointer;

@@ -17,13 +17,11 @@
     <main>
         Serão vistas oito linguagens ao longo do curso. Selecione alguma opção a seguir para mais detalhes.
         <div class="linguagens">
-            <p>
+            <p style="text-align: center;">
                 <button onclick="mostrar('bloco')">Bloco</button>
                 <button onclick="mostrar('c')">C++</button>
                 <button onclick="mostrar('html')">HTML</button>
                 <button onclick="mostrar('css')">CSS</button>
-            </p>
-            <p>
                 <button onclick="mostrar('javascript')">JavaScript</button>
                 <button onclick="mostrar('php')">PHP</button>
                 <button onclick="mostrar('mysql')">MySQL</button>
@@ -34,6 +32,59 @@
             <h2>Bloco</h2>
             <h3>Introdução</h3>
             <p>Programação em bloco é um paradigma de programação onde o código é estruturado em blocos, facilitando a leitura e a organização do código. Cada bloco pode conter declarações, variáveis e outras estruturas de controle. Este conceito é fundamental na maioria das linguagens de programação modernas e é especialmente útil para criar programas complexos de maneira mais gerenciável.</p>
+            <h3>Aplicações</h3>
+            <p>A programação em bloco é usada em várias aplicações e contextos, incluindo:</p>
+            <ul>
+                <li>Desenvolvimento de Software: Programas de desktop, aplicativos móveis e sistemas operacionais.</li>
+                <li>Desenvolvimento Web: Sites dinâmicos, aplicações web e serviços backend.</li>
+                <li>Inteligência Artificial e Aprendizado de Máquina: Algoritmos complexos e modelos de treinamento.</li>
+                <li>Automação e Sistemas Embutidos: Controles industriais, automóveis e dispositivos IoT.</li>
+            </ul>
+            <h3>Exemplos</h3>
+            <table style="margin-top: -10px;">
+                <tr>
+                    <td>
+                        <h4>Code</h4>
+                    </td>
+                    <td>
+                        <h4>Blockly Games</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imagens/Bloco1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgbloco">
+                    </td>
+                    <td>
+                        <img src="imagens/Bloco2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgbloco">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Scratch</h4>
+                    </td>
+                    <td>
+                        <h4>ArduBlock</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imagens/Bloco3.PNG" alt="Programação em Bloco - scratch" title="Programação em Bloco - scratch" class="imgbloco">
+                    </td>
+                    <td>
+                        <img src="imagens/Bloco4.PNG" alt="Programação em Bloco - ardublock" title="Programação em Bloco - ardublock" class="imgbloco">
+                    </td>
+                </tr>
+            </table>
+            <h3>Benefícios da Programação em Bloco</h3>
+            <ul>
+                <li>Organização: Permite que o código seja organizado de forma hierárquica e lógica, facilitando a compreensão e manutenção.</li>
+                <li>Escopo: Define claramente onde variáveis e funções são válidas, prevenindo erros de escopo.</li>
+                <li>Reusabilidade: Facilita a criação de funções e módulos reutilizáveis.</li>
+                <li>Depuração: Blocos bem definidos ajudam na depuração, permitindo que os desenvolvedores isolem e resolvam problemas mais facilmente.</li>
+            </ul>
+            <h3>Importância nos Dias Atuais</h3>
+            <p>A programação em bloco continua a ser uma prática essencial na engenharia de software moderna. Com o crescimento de sistemas complexos e a necessidade de escalabilidade, a habilidade de dividir o código em blocos manejáveis é crucial. Ferramentas de desenvolvimento como IDEs (Ambientes de Desenvolvimento Integrado) e técnicas como desenvolvimento ágil beneficiam-se enormemente da clareza e organização proporcionadas pela programação em bloco.</p>
+            <p>Além disso, plataformas de aprendizado de programação para jovens, como Scratch, utilizam uma abordagem visual baseada em blocos para ensinar conceitos fundamentais de programação, tornando o aprendizado mais acessível e intuitivo.</p>
         </div>
         <div id="c" class="linguagem">
             <h2>C++</h2>
@@ -65,9 +116,9 @@
         </div>
         <script>
             function mostrar(idLinguagem) {
-                $('.linguagem.active').slideUp(300, function() {
+                $('.linguagem.active').slideUp(1000, function() {
                     $(this).removeClass('active');
-                    $('#' + idLinguagem).slideDown(300).addClass('active');
+                    $('#' + idLinguagem).slideDown(1000).addClass('active');
                 });
             }
         </script>
