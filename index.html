@@ -11,13 +11,13 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <header>
-        <h1>Resumão - Programação ICP</h1>
-        <p>Você vai encontrar neste site tudo o que precisa para dominar as várias linguagens de programação que será vista ao longo do curso de programação de forma simples e acessível. Este site oferece resumos diretos de cada linguagem, contendo exemplos práticos e imagens para ajudar você a entender melhor.</p>
+        <h1>Resumão<br>Programação ICP</h1>
+        <p>Você vai encontrar neste site tudo o que precisa para dominar as várias linguagens de programação que serão vistas ao longo do curso de programação de forma simples e acessível. Este site oferece resumos diretos de cada linguagem, contendo exemplos práticos e imagens para ajudar você a entender melhor.</p>
     </header>
     <main>
-        Serão vistas oito linguagens ao longo do curso. Selecione alguma opção a seguir para mais detalhes.
-        <div class="linguagens">
-            <p style="text-align: center;">
+        <p style="text-align: center; text-indent: 0em;">Serão vistas oito linguagens ao longo do curso. Selecione alguma opção a seguir para mais detalhes:</p>
+        <div class="linguagens" style="padding-bottom: 30px;">
+            <div style="text-align: center;">
                 <button onclick="mostrar('bloco')">Bloco</button>
                 <button onclick="mostrar('c')">C++</button>
                 <button onclick="mostrar('html')">HTML</button>
@@ -26,9 +26,9 @@
                 <button onclick="mostrar('php')">PHP</button>
                 <button onclick="mostrar('mysql')">MySQL</button>
                 <button onclick="mostrar('python')">Python</button>
-            </p>
+            </div>
         </div>
-        <div id="bloco" class="linguagem active">
+        <div id="bloco" class="linguagem active" style="margin-top: -25px;">
             <h2>Bloco</h2>
             <h3>Introdução</h3>
             <p>Programação em bloco é um paradigma de programação onde o código é estruturado em blocos, facilitando a leitura e a organização do código. Cada bloco pode conter declarações, variáveis e outras estruturas de controle. Este conceito é fundamental na maioria das linguagens de programação modernas e é especialmente útil para criar programas complexos de maneira mais gerenciável.</p>
@@ -52,10 +52,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="imagens/Bloco1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgbloco">
+                        <div class="overlay">
+                            <img src="imagens/Bloco1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgbloco">
+                        </div>
                     </td>
                     <td>
-                        <img src="imagens/Bloco2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgbloco">
+                        <div class="overlay">
+                            <img src="imagens/Bloco2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgbloco">
+                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -68,10 +72,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="imagens/Bloco3.PNG" alt="Programação em Bloco - scratch" title="Programação em Bloco - scratch" class="imgbloco">
+                        <div class="overlay">
+                            <img src="imagens/Bloco3.PNG" alt="Programação em Bloco - scratch" title="Programação em Bloco - scratch" class="imgbloco">
+                        </div>
                     </td>
                     <td>
-                        <img src="imagens/Bloco4.PNG" alt="Programação em Bloco - ardublock" title="Programação em Bloco - ardublock" class="imgbloco">
+                        <div class="overlay">
+                            <img src="imagens/Bloco4.PNG" alt="Programação em Bloco - ardublock" title="Programação em Bloco - ardublock" class="imgbloco">
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -124,7 +132,8 @@
         </script>
     </main>
     <footer>
-        Desenvolvido por <a href="https://github.com/victorrpessoa" target="_blank">Victor R Pessoa</a>
+        <p>Desenvolvido por <a href="https://github.com/victorrpessoa" target="_blank">Victor R Pessoa</a></p>
     </footer>
+    <script src="zoomimg.js"></script>
 </body>
 </html>
