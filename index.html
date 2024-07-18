@@ -11,34 +11,36 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <header>
-        <h1>Resumão<br>Programação ICP</h1>
-        <p>Você vai encontrar neste site tudo o que precisa para dominar as várias linguagens de programação que serão vistas ao longo do curso de programação de forma simples e acessível. Este site oferece resumos diretos de cada linguagem, contendo exemplos práticos e imagens para ajudar você a entender melhor.</p>
+        <h1>RESUMÃO<br>Programação ICP</h1>
+        <div class="intro">
+            <p>Você vai encontrar neste site tudo o que precisa para dominar as várias linguagens de programação que serão vistas ao longo do curso de programação de forma simples e acessível. Este site oferece resumos diretos de cada linguagem, contendo exemplos práticos e imagens para ajudar você a entender melhor.</p>
+        </div>
     </header>
-    <main>
-        <p style="text-align: center; text-indent: 0em;">Serão vistas oito linguagens ao longo do curso. Selecione alguma opção a seguir para mais detalhes:</p>
+    <main id="inicio">
+        <p style="text-align: center; text-indent: 0em;">Serão vistas 8 linguagens ao longo do curso. Selecione alguma opção a seguir para obter mais detalhes sobre a linguagem:</p>
         <div class="linguagens" style="padding-bottom: 30px;">
             <div style="text-align: center;">
-                <button onclick="mostrar('bloco')">Bloco</button>
-                <button onclick="mostrar('c')">C++</button>
-                <button onclick="mostrar('html')">HTML</button>
-                <button onclick="mostrar('css')">CSS</button>
-                <button onclick="mostrar('javascript')">JavaScript</button>
-                <button onclick="mostrar('php')">PHP</button>
-                <button onclick="mostrar('mysql')">MySQL</button>
-                <button onclick="mostrar('python')">Python</button>
+                <button onclick="mostrar('bloco')" id="ajuste">Bloco</button>
+                <button onclick="mostrar('c')" id="ajuste">C++</button>
+                <button onclick="mostrar('html')" id="ajuste">HTML</button>
+                <button onclick="mostrar('css')" id="ajuste">CSS</button>
+                <button onclick="mostrar('javascript')" id="ajuste">JavaScript</button>
+                <button onclick="mostrar('php')" id="ajuste">PHP</button>
+                <button onclick="mostrar('mysql')" id="ajuste">MySQL</button>
+                <button onclick="mostrar('python')" id="ajuste">Python</button>
             </div>
         </div>
         <div id="bloco" class="linguagem active" style="margin-top: -25px;">
             <h2>Bloco</h2>
             <h3>Introdução</h3>
-            <p>Programação em bloco é um paradigma de programação onde o código é estruturado em blocos, facilitando a leitura e a organização do código. Cada bloco pode conter declarações, variáveis e outras estruturas de controle. Este conceito é fundamental na maioria das linguagens de programação modernas e é especialmente útil para criar programas complexos de maneira mais gerenciável.</p>
+            <p><strong class="destaque">Programação em bloco</strong> é um paradigma de programação onde o código é estruturado em blocos, facilitando a leitura e a organização do código. Cada bloco pode conter declarações, variáveis e outras estruturas de controle. Este conceito é <strong class="destaque">fundamental na maioria das linguagens de programação modernas</strong> e é especialmente útil para criar programas complexos de maneira mais gerenciável.</p>
             <h3>Aplicações</h3>
             <p>A programação em bloco é usada em várias aplicações e contextos, incluindo:</p>
             <ul>
-                <li>Desenvolvimento de Software: Programas de desktop, aplicativos móveis e sistemas operacionais.</li>
-                <li>Desenvolvimento Web: Sites dinâmicos, aplicações web e serviços backend.</li>
-                <li>Inteligência Artificial e Aprendizado de Máquina: Algoritmos complexos e modelos de treinamento.</li>
-                <li>Automação e Sistemas Embutidos: Controles industriais, automóveis e dispositivos IoT.</li>
+                <li><strong class="destaque">Desenvolvimento de Software:</strong> Programas de desktop, aplicativos móveis e sistemas operacionais.</li>
+                <li><strong class="destaque">Desenvolvimento Web:</strong> Sites dinâmicos, aplicações web e serviços backend.</li>
+                <li><strong class="destaque">Inteligência Artificial e Aprendizado de Máquina:</strong> Algoritmos complexos e modelos de treinamento.</li>
+                <li><strong class="destaque">Automação e Sistemas Embutidos:</strong> Controles industriais, automóveis e dispositivos IoT.</li>
             </ul>
             <h3>Exemplos</h3>
             <table style="margin-top: -10px;">
@@ -85,14 +87,15 @@
             </table>
             <h3>Benefícios da Programação em Bloco</h3>
             <ul>
-                <li>Organização: Permite que o código seja organizado de forma hierárquica e lógica, facilitando a compreensão e manutenção.</li>
-                <li>Escopo: Define claramente onde variáveis e funções são válidas, prevenindo erros de escopo.</li>
-                <li>Reusabilidade: Facilita a criação de funções e módulos reutilizáveis.</li>
-                <li>Depuração: Blocos bem definidos ajudam na depuração, permitindo que os desenvolvedores isolem e resolvam problemas mais facilmente.</li>
+                <li><strong class="destaque">Organização:</strong> Permite que o código seja organizado de forma hierárquica e lógica, facilitando a compreensão e manutenção.</li>
+                <li><strong class="destaque">Escopo:</strong> Define claramente onde variáveis e funções são válidas, prevenindo erros de escopo.</li>
+                <li><strong class="destaque">Reusabilidade:</strong> Facilita a criação de funções e módulos reutilizáveis.</li>
+                <li><strong class="destaque">Depuração:</strong> Blocos bem definidos ajudam na depuração, permitindo que os desenvolvedores isolem e resolvam problemas mais facilmente.</li>
             </ul>
             <h3>Importância nos Dias Atuais</h3>
-            <p>A programação em bloco continua a ser uma prática essencial na engenharia de software moderna. Com o crescimento de sistemas complexos e a necessidade de escalabilidade, a habilidade de dividir o código em blocos manejáveis é crucial. Ferramentas de desenvolvimento como IDEs (Ambientes de Desenvolvimento Integrado) e técnicas como desenvolvimento ágil beneficiam-se enormemente da clareza e organização proporcionadas pela programação em bloco.</p>
-            <p>Além disso, plataformas de aprendizado de programação para jovens, como Scratch, utilizam uma abordagem visual baseada em blocos para ensinar conceitos fundamentais de programação, tornando o aprendizado mais acessível e intuitivo.</p>
+            <p>A programação em bloco continua a ser uma prática essencial na engenharia de software moderna. Com o crescimento de sistemas complexos e a necessidade de escalabilidade, a habilidade de dividir o código em blocos manejáveis é crucial. Ferramentas de desenvolvimento como <strong class="destaque">IDEs</strong> (Ambientes de Desenvolvimento Integrado) e técnicas como desenvolvimento ágil beneficiam-se enormemente da clareza e organização proporcionadas pela programação em bloco.</p>
+            <p>Além disso, plataformas de aprendizado de programação para jovens, como Scratch, <strong class="destaque">utilizam uma abordagem visual baseada em blocos para ensinar conceitos fundamentais de programação</strong>, tornando o aprendizado mais acessível e intuitivo.</p>
+            <button class="voltar">Voltar ao topo</button>
         </div>
         <div id="c" class="linguagem">
             <h2>C++</h2>
@@ -122,18 +125,18 @@
             <h2>Python</h2>
             <p>Conteúdo sobre a Linguagem 8...</p>
         </div>
-        <script>
-            function mostrar(idLinguagem) {
-                $('.linguagem.active').slideUp(1000, function() {
-                    $(this).removeClass('active');
-                    $('#' + idLinguagem).slideDown(1000).addClass('active');
-                });
-            }
-        </script>
     </main>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/victorrpessoa" target="_blank">Victor R Pessoa</a></p>
     </footer>
-    <script src="zoomimg.js"></script>
+    <script>
+        function mostrar(idLinguagem) {
+            $('.linguagem.active').slideUp(1000, function() {
+                $(this).removeClass('active');
+                $('#' + idLinguagem).slideDown(1000).addClass('active');
+            });
+        }
+    </script>
+    <script src="animacoes.js"></script>
 </body>
 </html>

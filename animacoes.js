@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function(){
+    // Animação ao clicar nas imagens
     if ($('#overlay').length === 0) {
         $('body').append('<div id="overlay"></div>');
     }
@@ -26,5 +27,15 @@ $(document).ready(function() {
             overlay.css('display', 'none');
             imgzoom.css('display', 'none');
         }, 300);
+    });
+
+    // Animação de scroll ao clicar no botão de voltar ao topo
+    $('.voltar').click(function(){
+        $('html, body').animate({scrollTop: 0}, 500);       
+    });
+
+    // Ajuste do padding ao clicar no botão de alguma linguagem
+    $('#ajuste').click(function(){
+        $('main').css("padding", "5px 15px 30px 15px");
     });
 });
