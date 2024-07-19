@@ -35,5 +35,8 @@ $(document).ready(function(){
     // Ajuste do padding ao clicar no botão de alguma linguagem
     $('#ajuste').click(function(){
         $('main').css("padding", "5px 15px 30px 15px");
+        $('footer').css("position", "relative");
+        $('footer').css("width", "100vw");
+        $('footer').css("margin", "-10px 0px -10px -13px");
     });
 });
