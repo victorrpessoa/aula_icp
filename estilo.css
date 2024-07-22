@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Texto;
-    src: url("fontes/Acme-Regular.ttf");
+    src: url("fontes/InterTight-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: Título;
@@ -11,7 +11,7 @@
 
 :root {
     --cor0: #fafcff;
-    --cor1: #007ee5;
+    --cor1: #3b92da;
     --cor2: #1f70bb;
     --cor3: #305d91;
     --cor4: #334366;
@@ -21,13 +21,15 @@
     --cor8: #ffdcb4;
     --cor9: #ffb867;
     --cor10: #ff8800;
+    --cor11: #d37000;
+    --cor12: #ac5c00;
 }
 body {
-    background-color: var(--cor3);
+    background-color: var(--cor1);
 }
 header {
-    background-image: linear-gradient(180deg, var(--cor7), var(--cor3));
-    margin: -25px -9px -10px -9px;
+    background-image: linear-gradient(180deg, var(--cor4), var(--cor6));
+    margin: -25px -9px 0px -9px;
     padding: 15px;
     color: var(--cor0);
 }
@@ -41,24 +43,21 @@ h1 {
     font-size: 2.2em;
     color: var(--cor9);
 }
-.intro {
-    padding: 0px 0px 10px 0px;
-}
 h2 {
     font-family: Título;
     font-size: 1.5em;
-    padding: 5px;
+    padding: 6px;
     border-radius: 3px;
-    color: var(--cor9);
-    background-image: linear-gradient(90deg, var(--cor4), var(--cor1));
+    color: var(--cor0);
+    background-image: linear-gradient(90deg, var(--cor11), var(--cor12));
 }
 h3 {
     font-family: Título;
     font-size: 1.3em;
-    padding: 5px;
+    padding: 6px;
     border-radius: 3px;
-    color: var(--cor9);
-    background-image: linear-gradient(90deg, var(--cor4), var(--cor1));
+    color: var(--cor8);
+    background-image: linear-gradient(90deg, var(--cor3), var(--cor4));
 }
 h4 {
     font-family: Título;
@@ -71,19 +70,20 @@ p {
     text-indent: 2em;
 }
 ul {
+    width: 80%;
     font-family: Texto;
     line-height: 1.4em;
     text-align: justify;
+    list-style-type: '\2716\00A0\00A0';
 }
 .destaque {
-    color: var(--cor3);
+    color: var(--cor2);
 }
 main {
     background-color: var(--cor0);
     margin: auto;
     padding: 5px 15px 0px 15px;
     width: 85%;
-    border-radius: 3px 3px 0px 0px;
 }
 main a {
     text-decoration: none;
@@ -94,7 +94,7 @@ button {
     font-size: 1em;
     color: var(--cor7);
     background-color: var(--cor8);
-    border: 2px solid var(--cor10);
+    border: 2px solid var(--cor9);
     border-radius: 10px;
     transition-duration: 0.2s;
 }
@@ -138,14 +138,14 @@ table, td {
 }
 .linguagens button {
     margin: 3px 1px 3px 1px;
-    width: 120px;
+    width: 135px;
     padding: 10px;
     cursor: pointer;
 }
 .voltar {
     display: block;
     margin: auto;
-    width: 120px;
+    width: 135px;
     padding: 10px;
     cursor: pointer;
 }
