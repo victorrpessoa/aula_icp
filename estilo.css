@@ -28,13 +28,14 @@ body {
     background-color: var(--cor1);
 }
 header {
-    background-image: linear-gradient(180deg, var(--cor4), var(--cor6));
-    margin: -25px -9px 0px -9px;
+    background-image: linear-gradient(180deg, var(--cor6), var(--cor1));
+    margin: -25px -9px 20px -9px;
     padding: 15px;
     color: var(--cor0);
 }
 header p {
-    text-align: center;
+    margin: auto;
+    width: 85%;
 }
 h1 {
     padding: 10px;
@@ -75,6 +76,13 @@ ul {
     line-height: 1.4em;
     text-align: justify;
     list-style-type: '\2716\00A0\00A0';
+}
+h4 a {
+    padding: 3px;
+    font-size: 0.8em;
+    color: var(--cor5);
+    background-color: var(--cor8);
+    border: 3px outset black;
 }
 .destaque {
     color: var(--cor2);
@@ -129,7 +137,7 @@ table, td {
 }
 .imgbloco {
     width: 90%;
-    margin-top: -20px;
+    margin-top: -15px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
