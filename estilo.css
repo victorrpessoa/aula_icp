@@ -144,11 +144,43 @@ table, td {
 .linguagem {
     display: none;
 }
+.conteudo {
+    display: none;
+}
 .linguagens button {
     margin: 3px 1px 3px 1px;
     width: 135px;
     padding: 10px;
     cursor: pointer;
+}
+.conteudos button {
+    margin: 3px 1px 3px 1px;
+    width: 135px;
+    padding: 10px;
+    cursor: pointer;
+}
+pre {
+    width: 95%;
+    margin: auto;
+    font-family: monospace;
+    line-height: 1.5em;
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+span {
+    padding: 3px;
+    font-family: monospace;
+    background-color: lightgrey;
+}
+.verde {
+    color: rgb(51, 150, 92);
+}
+.laranja {
+    color: rgb(216, 122, 0);
+}
+.azul {
+    color: rgb(42, 131, 134);
 }
 .voltar {
     display: block;
