@@ -7,7 +7,7 @@ $(document).ready(function(){
     const imgzoom = $('<img id="imgzoom">');
 
     $('body').append(imgzoom);
-    $('.imgbloco').click(function() {
+    $('.imgs').click(function() {
         const src = $(this).attr('src');
         imgzoom.attr('src', src);
         overlay.css('display', 'block');

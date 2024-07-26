@@ -53,12 +53,12 @@
                 <tr>
                     <td>
                         <div class="overlay">
-                            <img src="imagens/Bloco1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgbloco">
+                            <img src="imagens/Bloco1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgs">
                         </div>
                     </td>
                     <td>
                         <div class="overlay">
-                            <img src="imagens/Bloco2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgbloco">
+                            <img src="imagens/Bloco2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgs">
                         </div>
                     </td>
                 </tr>
@@ -73,12 +73,24 @@
                 <tr>
                     <td>
                         <div class="overlay">
-                            <img src="imagens/Bloco3.PNG" alt="Programação em Bloco - scratch" title="Programação em Bloco - scratch" class="imgbloco">
+                            <img src="imagens/Bloco3.PNG" alt="Programação em Bloco - scratch" title="Programação em Bloco - scratch" class="imgs">
                         </div>
                     </td>
                     <td>
                         <div class="overlay">
-                            <img src="imagens/Bloco4.PNG" alt="Programação em Bloco - ardublock" title="Programação em Bloco - ardublock" class="imgbloco">
+                            <img src="imagens/Bloco4.PNG" alt="Programação em Bloco - ardublock" title="Programação em Bloco - ardublock" class="imgs">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h4><a href="https://appinventor.mit.edu" target="_blank">App Inventor</a></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="overlay">
+                            <img src="imagens/Bloco5.PNG" alt="Programação em Bloco - app inventor" title="Programação em Bloco - app inventor" class="imgs" style="width: 45%;">
                         </div>
                     </td>
                 </tr>
@@ -101,6 +113,7 @@
                 <div style="text-align: center;">
                     <button onclick="trocar('conceito')" id="ajuste">Conceito</button>
                     <button onclick="trocar('comandos')" id="ajuste">Comandos</button>
+                    <button onclick="trocar('mqtt')" id="ajuste">MQTT</button>
                 </div>
             </div>
             <div id="conceito" class="conteudo active" style="margin-top: -25px;">
@@ -128,12 +141,12 @@
                     <tr>
                         <td>
                             <div class="overlay">
-                                <img src="imagens/C++1.PNG" alt="Programação em Bloco - code.org" title="Programação em Bloco - code.org" class="imgbloco">
+                                <img src="imagens/C++1.PNG" alt="Programação C++ - autodesk tinkercad" title="Programação C++ - autodesk tinkercad" class="imgs">
                             </div>
                         </td>
                         <td>
                             <div class="overlay">
-                                <img src="imagens/C++2.PNG" alt="Programação em Bloco - blockly games" title="Programação em Bloco - blockly games" class="imgbloco">
+                                <img src="imagens/C++2.PNG" alt="Programação C++ - arduino ide" title="Programação C++ - arduino ide" class="imgs">
                             </div>
                         </td>
                     </tr>
@@ -157,8 +170,8 @@
                 <p>Logo abaixo você verá um exemplo de programa escrito em C++ para ligar 2 LEDs de forma alternada:</p>
                 <pre>
 
-  <span class="verde">#define</span> LED_VERMELHO 13
-  <span class="verde">#define</span> LED_AMARELO 12
+  <span class="verde">#define</span> LED_01 13
+  <span class="verde">#define</span> LED_02 12
 
   <span class="azul">void</span> <span class="verde">setup</span>() {
       <span class="laranja">pinMode</span> (13, <span class="azul">OUTPUT</span>);
@@ -166,19 +179,109 @@
   }
 
   <span class="azul">void</span> <span class="verde">loop</span>() {
-      <span class="laranja">digitalWrite</span>(LED_VERMELHO, <span class="azul">HIGH</span>);
-      <span class="laranja">digitalWrite</span>(LED_AMARELO, <span class="azul">LOW</span>);
+      <span class="laranja">digitalWrite</span>(LED_01, <span class="azul">HIGH</span>);
+      <span class="laranja">digitalWrite</span>(LED_02, <span class="azul">LOW</span>);
       <span class="laranja">delay</span>(1000);
-      <span class="laranja">digitalWrite</span>(LED_VERMELHO, <span class="azul">LOW</span>);
-      <span class="laranja">digitalWrite</span>(LED_AMARELO, <span class="azul">HIGH</span>);
+      <span class="laranja">digitalWrite</span>(LED_01, <span class="azul">LOW</span>);
+      <span class="laranja">digitalWrite</span>(LED_02, <span class="azul">HIGH</span>);
       <span class="laranja">delay</span>(1000);
   }
                 </pre>
                 <h3>Lista de Comandos</h3>
-                <p><span>#define</span> -> Comando usado para definir componentes, constantes ou funções.</p>
-                <p><span>void</span> -> Função que não retorna nenhum valor. Ela é usada quando a função executa uma tarefa, mas não precisa retornar um resultado.
-
-                </p>
+                <h5>Opcionais</h5>
+                <p><strong><span>// ou /* */</span></strong> -> Use "//" para inserir comentários de linha única. Use "/* */" para inserir comentários em várias linhas</p>
+                <p><strong><span>#define</span></strong> -> Comando usado para definir componentes, constantes ou funções.</p>
+                <h5>Primeiros Passos</h5>
+                <p><strong><span>void setup()</span></strong> -> Função usada para configurar definições iniciais, como definir pinos de entrada e saída, iniciar comunicação serial, ou configurar sensores e atuadores.</p>
+                <p><strong><span>void loop()</span></strong> -> Função onde se colocam as instruções que desejam ser executadas continuamente, como ler sensores, atualizar displays, ou responder a entradas do usuário.</p>
+                <p><strong><span>pinMode</span></strong> -> Comando usado para definir como os pinos do Arduino devem se comportar, como entrada ou saída, dependendo das necessidades do projeto.</p>
+                <p><strong><span>OUTPUT</span></strong> -> Comando para definir um pino como saída para envio de sinais elétricos (HIGH ou LOW) para poder controlar componentes como LEDs, relés, motores, etc.</p>
+                <p><strong><span>INPUT</span></strong> -> Comando para definir um pino como entrada para leitura de sinais elétricos (HIGH ou LOW) para poder controlar componentes como sensores, botões, etc.</p>
+                <p><strong><span>digitalWrite</span></strong> -> Comando usado para definir o estado de um pino digital configurado como saída.</p>
+                <p><strong><span>digitalRead</span></strong> -> Comando usado para ler o estado de um pino digital configurado como entrada.</p>
+                <p><strong><span>analogWrite</span></strong> -> Comando usado para escrever um valor analógico (PWM) em um pino digital configurado como saída. É utilizado para simular uma saída analógica.</p>
+                <p><strong><span>analogRead</span></strong> -> Comando usado para ler o valor de um pino analógico (entrada). É utilizado para obter valores de sensores analógicos.</p>
+                <p><strong><span>delay</span></strong> -> Comando usado para pausar a execução do programa por um período especificado de tempo em milissegundos (ms). Ele é útil para criar atrasos entre ações, como ligar e desligar LEDs, ler sensores em intervalos regulares, ou esperar por um tempo determinado antes de continuar a execução do código.</p>
+                <h5>Condicionais</h5>
+                <p><strong><span>if</span></strong> -> O comando "if" avalia uma condição e executa um bloco de código se a condição for verdadeira.</p>
+                <p><strong><span>else if</span></strong> -> O comando "else if" é usado para testar múltiplas condições. Se a primeira condição ""if" for falsa, o "else "if" será avaliado.</p>
+                <p><strong><span>else</span></strong> -> O comando "else" é usado para definir um bloco de código que será executado se todas as condições anteriores (if e else if) forem falsas.</p>
+                <p><strong><span>switch</span></strong> -> O comando "switch" seleciona uma das muitas opções baseadas no valor de uma expressão.</p>
+                <p><strong><span>case</span></strong> -> O comando "case" é usado dentro de um "switch" para definir um bloco de código que será executado se a expressão no "switch" corresponder ao valor do "case".</p>
+                <p><strong><span>default</span></strong> -> O comando "default" é usado dentro de um "switch" para definir um bloco de código que será executado se nenhum dos "case" corresponder à expressão.</p>
+                <h5>Variáveis</h5>
+                <p><strong><span>int</span></strong> -> Tipo de dado que é usado para representar números inteiros, positivos ou negativos, sem parte decimal.</p>
+                <p><strong><span>float</span></strong> -> Tipo de dado que é usado para representar números de ponto flutuante, que são números com parte decimal.</p>
+                <p><strong><span>char</span></strong> -> Tipo de dado que é usado para representar um único caractere. Os caracteres são delimitados por aspas simples.</p>
+                <p><strong><span>bool</span></strong> -> Tipo de dado que é usado para representar valores booleanos, que são true (verdadeiro) ou false (falso).</p>
+                <h5>Repetições</h5>
+                <p><strong><span>for</span></strong> -> Comando usado para executar um bloco de código repetidamente por um número específico de vezes. É composto de três partes: inicialização, condição de parada e incremento.</p>
+                <p><strong><span>while</span></strong> -> Comando usado para executar um bloco de código repetidamente enquanto uma condição for verdadeira. A condição é verificada antes de cada iteração.</p>
+                <p><strong><span>do ... while</span></strong> -> Comando semelhante ao "while", mas garante que o bloco de código seja executado pelo menos uma vez, pois a condição é verificada após a execução do bloco.</p>
+                <h5>Monitor Serial</h5>
+                <p><strong><span>Serial.begin(9600)</span></strong> -> Comando usado para inicializar a comunicação serial, definindo a taxa de transmissão de dados em bits por segundo (baud rate). O valor mais comum para o Arduino é 9600.</p>
+                <p><strong><span>Serial.print()</span></strong> -> Envia dados para a porta serial, permitindo que você veja os dados no monitor serial sem adicionar uma nova linha após o valor.</p>
+                <p><strong><span>Serial.println()</span></strong> -> Funciona como o comando "Serial.print", mas adiciona uma nova linha após o valor, movendo o cursor para o início da próxima linha no monitor serial.</p>
+                <p><strong><span>Serial.available()</span></strong> -> Retorna o número de bytes disponíveis para leitura na porta serial. É útil para verificar se há dados recebidos antes de tentar ler.</p>
+                <p><strong><span>Serial.read()</span></strong> -> Lê o próximo byte de dados recebidos na porta serial. Se não houver dados disponíveis, retorna -1.</p>
+                <p><strong><span>Serial.parseInt()</span></strong> -> Lê os dados da porta serial e os converte para um número inteiro. Ele ignora caracteres não numéricos e para de ler quando encontra um caractere não numérico.</p>
+                <p><strong><span>Serial.parseFloat()</span></strong> -> Lê os dados da porta serial e os converte para um número de ponto flutuante (float). Ele ignora caracteres não numéricos, exceto o ponto decimal.</p>
+                <h5>Bibliotecas</h5>
+                <p><strong><span>#include &lt;Servo.h&gt;</span></strong> -> Comando utilizado para incluir arquivos de cabeçalho e bibliotecas no seu código. Isso permite que você use funções, classes e objetos definidos em outros arquivos sem precisar redefini-los.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
+            <div id="mqtt" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p><strong class="destaque">MQTT</strong> (Message Queuing Telemetry Transport) é um <strong class="destaque">protocolo de mensagens leve e eficiente</strong>, projetado para a comunicação em ambientes com largura de banda limitada e redes com alta latência. Criado para facilitar a troca de mensagens entre dispositivos em redes de baixa capacidade, o MQTT é amplamente utilizado em aplicações de <strong class="destaque">Internet das Coisas</strong> (IoT) e em sistemas de mensagens em tempo real.</p>
+                <h3>Aplicações</h3>
+                <p>MQTT é amplamente utilizado em uma variedade de contextos devido à sua eficiência e flexibilidade:</p>
+                <ul>
+                    <li><strong class="destaque">Internet das Coisas (IoT):</strong> Comunicação entre dispositivos e sensores, como em casas inteligentes, cidades inteligentes e ambientes industriais.</li>
+                    <li><strong class="destaque">Automação Residencial:</strong> Controle de dispositivos domésticos inteligentes, como termostatos, luzes e fechaduras.</li>
+                    <li><strong class="destaque">Sistemas de Monitoramento:</strong> Monitoramento de sistemas de infraestrutura crítica, como redes elétricas e sistemas de água.</li>
+                    <li><strong class="destaque">Aplicações Móveis:</strong> Comunicação em tempo real para aplicativos móveis e jogos online.</li>
+                    <li><strong class="destaque">Saúde:</strong> Dispositivos médicos conectados que transmitem dados para sistemas de monitoramento remoto.</li>
+                </ul>
+                <h3>Site para Utilizar o Protocolo MQTT</h3>
+                <table style="margin-top: -20px;">
+                    <tr>
+                        <td colspan="2">
+                            <h4><a href="https://testclient-cloud.mqtt.cool" target="_blank">MQTT Test Client</a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="overlay">
+                                <img src="imagens/C++3.PNG" alt="Programação C++ - mqtt test client" title="Programação C++ - mqtt test client" class="imgs" style="width: 45%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Termos Utilizados</h3>
+                <ul>
+                    <li><strong class="destaque">Broker:</strong> Servidor que gerencia a troca de mensagens entre os clientes. Ele recebe mensagens dos clientes e as distribui para os clientes assinantes dos tópicos relevantes.</li>
+                    <li><strong class="destaque">Client:</strong> Qualquer dispositivo ou aplicativo que se conecta ao broker para enviar ou receber mensagens.</li>
+                    <li><strong class="destaque">Topic:</strong> Categoria ou assunto pelo qual as mensagens são publicadas e assinadas. Os tópicos são hierárquicos e permitem uma estrutura flexível para a comunicação.</li>
+                    <li><strong class="destaque">Publish:</strong> Ato de enviar uma mensagem para um tópico específico.</li>
+                    <li><strong class="destaque">Subscribe:</strong> Ato de se inscrever em um tópico para receber mensagens publicadas nesse tópico</li>
+                    <li><strong class="destaque">QoS (Quality of Service):</strong> Conjunto de níveis que define a garantia de entrega das mensagens:</li>
+                    <ul>
+                        <li style="list-style-type: square; margin-top: 3px;"><strong class="destaque">QoS 0:</strong> Entrega no máximo uma vez (sem confirmação).</li>
+                        <li style="list-style-type: square; margin-top: 3px;"><strong class="destaque">QoS 1:</strong> Entrega pelo menos uma vez (com confirmação).</li>
+                        <li style="list-style-type: square; margin-top: 3px;"><strong class="destaque">QoS 2:</strong> Entrega exatamente uma vez (com uma etapa adicional de confirmação).</li>
+                    </ul>
+                </ul>
+                <h3>Benefícios do MQTT</h3>
+                <ul>
+                    <li><strong class="destaque">Leveza:</strong> O MQTT foi projetado para ser eficiente em termos de largura de banda e consumo de recursos, o que o torna ideal para dispositivos com recursos limitados.</li>
+                    <li><strong class="destaque">Escalabilidade:</strong> Suporta um grande número de clientes e tópicos, facilitando a comunicação em larga escala.</li>
+                    <li><strong class="destaque">Qualidade de Serviço (QoS):</strong> Permite garantir diferentes níveis de entrega de mensagens, ajustando-se às necessidades de confiabilidade.</li>
+                    <li><strong class="destaque">Persistência:</strong> Oferece suporte a mensagens persistentes e sessões de cliente, permitindo que mensagens não sejam perdidas quando um cliente está offline.</li>
+                    <li><strong class="destaque">Segurança:</strong> Pode ser integrado com protocolos de segurança, como TLS/SSL, para garantir a segurança da comunicação.</li>
+                </ul>
+                <h3>Importância nos Dias Atuais</h3>
+                <p>O protocolo MQTT desempenha um papel crucial no cenário moderno de IoT e comunicação em tempo real. Sua capacidade de operar de forma eficiente em redes com largura de banda limitada e alta latência faz dele uma escolha popular para <strong class="destaque">soluções que envolvem um grande número de dispositivos conectados</strong>. Além disso, o MQTT é amplamente suportado por uma variedade de plataformas e ferramentas, tornando-o uma <strong class="destaque">solução prática para desenvolvedores</strong> e engenheiros em uma gama diversificada de aplicações.</p>
+                <p>Com o crescimento da Internet das Coisas e a necessidade crescente de comunicação eficiente entre dispositivos, o MQTT continua a ser uma ferramenta essencial para garantir que dados sejam trocados de forma confiável e eficiente em ambientes desafiadores.</p>
                 <button class="voltar">Voltar ao topo</button>
             </div>
         </div>
