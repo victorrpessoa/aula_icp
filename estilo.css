@@ -193,6 +193,23 @@ span {
 .azul {
     color: rgb(42, 131, 134);
 }
+.botão-copiar {
+    display: block;
+    margin: auto;
+    padding: 6px;
+    font-family: Texto;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--cor7);
+    background-color: var(--cor8);
+    border: 2px solid var(--cor9);
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.botão-copiar:hover {
+    background-color: var(--cor10);
+}
 .voltar {
     display: block;
     margin: auto;

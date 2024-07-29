@@ -188,8 +188,9 @@
   }
                 </pre>
                 <h3>Lista de Comandos</h3>
-                <h5>Opcionais</h5>
-                <p><strong><span>// ou /* */</span></strong> -> Use "//" para inserir comentários de linha única. Use "/* */" para inserir comentários em várias linhas</p>
+                <h5>Comentários</h5>
+                <p><strong><span>// ou /* */</span></strong> -> Use "//" para inserir comentários de linha única. Use "/* */" para inserir comentários em várias linhas.</p>
+                <h5>Definições</h5>
                 <p><strong><span>#define</span></strong> -> Comando usado para definir componentes, constantes ou funções.</p>
                 <h5>Primeiros Passos</h5>
                 <p><strong><span>void setup()</span></strong> -> Função usada para configurar definições iniciais, como definir pinos de entrada e saída, iniciar comunicação serial, ou configurar sensores e atuadores.</p>
@@ -339,6 +340,13 @@
                 <h3>Lista de Comandos</h3>
                 <h5>Comentários</h5>
                 <p><strong><span>&lt;!-- Comentário --&gt;</span></strong> -> Comando usado para inserir algum comentário em HTML, sendo esse em linha única ou várias linhas.</p>
+                <h5>Estruturas</h5>
+                <p><strong><span>&lt;html&gt;</span></strong> -> Tag que representa o contêiner raiz de um documento HTML.</p>
+                <p><strong><span>&lt;body&gt;</span></strong> -> Tag que contém todo o conteúdo visível de um documento HTML.</p>
+                <p><strong><span>&lt;header&gt;</span></strong> -> Tag que representa uma seção de introdução ou um grupo de navegação.</p>
+                <p><strong><span>&lt;main&gt;</span></strong> -> Tag que representa o conteúdo principal de um documento HTML.</p>
+                <p><strong><span>&lt;section&gt;</span></strong> -> Tag que representa uma seção genérica de um documento, como um capítulo, uma área de um tema ou um grupo de conteúdo.</p>
+                <p><strong><span>&lt;footer&gt;</span></strong> -> Tag que representa o rodapé de um documento ou de uma seção.</p>
                 <h5>Títulos</h5>
                 <p><strong><span>&lt;h1&gt; a &lt;h6&gt;</span></strong> -> Tag usada para inserir títulos de diferentes níveis hierárquicos, sendo esses de nível 1 a 6. Os títulos inseridos possuem uma personalização predefinida.</p>
                 <h5>Parágrafos</h5>
@@ -357,12 +365,151 @@
                 <p><strong><span>&lt;ol&gt;</span></strong> -> Tag utilizada para criar uma lista ordenada, onde os itens são numerados.</p>
                 <p><strong><span>&lt;ul&gt;</span></strong> -> Tag utilizada para criar uma lista não ordenada, onde os itens são marcados com pontos (bullets).</p>
                 <p><strong><span>&lt;li&gt;</span></strong> -> Tag  utilizada para definir um item em uma lista ordenada "&lt;ol&gt;" ou não ordenada "&lt;ul&gt;".</p>
+                <h5>Tabelas</h5>
+                <p><strong><span>&lt;table&gt;</span></strong> -> Tag utilizada para criar uma tabela em uma página web.</p>
+                <p><strong><span>&lt;tr&gt;</span></strong> -> Tag utilizada para definir uma linha de células em uma tabela.</p>
+                <p><strong><span>&lt;th&gt;</span></strong> -> Tag utilizada para definir uma célula de cabeçalho em uma tabela. Deve estar contida dentro de uma tag "&lt;tr&gt;".</p>
+                <p><strong><span>&lt;td&gt;</span></strong> -> Tag  utilizada para definir uma célula de dados em uma linha de tabela. Pode conter texto, imagens, links e outros elementos HTML. Essa tag também apresenta atributos importantes, como "rowspan" e "colspan".</p>
+                <h5>Divisões</h5>
+                <p><strong><span>&lt;div&gt;</span></strong> -> Tag utilizada para definir uma divisão ou seção de um documento HTML. Essa tag é comumente usada para agrupar elementos e aplicar estilos ou scripts a um conjunto de elementos utilizando os atributos "id" ou "class".</p>
+                <p><strong><span>&lt;span&gt;</span></strong> -> Tag utilizada para definir uma seção ou contêiner inline. Comumente usada para aplicar estilos ou scripts a partes específicas do conteúdo sem interromper o fluxo do texto.</p>
+                <h5>Formulários</h5>
+                <p><strong><span>&lt;form&gt;</span></strong> -> Tag utilizada para criar um formulário HTML que pode conter controles interativos para receber dados do usuário. Pode enviar dados para um servidor usando métodos HTTP (GET ou POST). Essa tag também apresenta atributos importantes, como "action" e "method".</p>
+                <p><strong><span>&lt;label&gt;</span></strong> -> Tag utilizada para definir um rótulo para um elemento de formulário. O atributo "for" pode ser usado para associar o rótulo a um elemento específico pelo seu "id".</p>
+                <p><strong><span>&lt;input&gt;</span></strong> -> Tag utilizada para criar diversos tipos de controles interativos em um formulário. Essa tag também apresenta atributos importantes, como "type", "name", "value" e "id". O atributo "type" apresenta uma variedade de tipos, como "text", "password", "radio", "checkbox", "number" e "submit".</p>
+                <p><strong><span>&lt;textarea&gt;</span></strong> -> Tag utilizada para criar uma área de texto multilinha. Essa tag também apresenta atributos importantes, como "rows" e "cols".</p>
+                <p><strong><span>&lt;fieldset&gt;</span></strong> -> Tag utilizada para agrupar elementos de um formulário dentro de uma seção com borda.</p>
+                <p><strong><span>&lt;legend&gt;</span></strong> -> Tag utilizada para fornecer uma legenda ou título para um grupo de elementos de formulário. Esse componente deve ser utilizado dentro da tag "&lt;fieldset&gt;".</p>
                 <button class="voltar">Voltar ao topo</button>
             </div>
         </div>
         <div id="css" class="linguagem">
             <h2>CSS</h2>
-            <p>Conteúdo sobre a Linguagem 4...</p>
+            <div class="conteudos" style="padding-bottom: 30px;">
+                <div style="text-align: center;">
+                    <button onclick="trocar('conceitocss')" id="ajuste">Conceito</button>
+                    <button onclick="trocar('comandoscss')" id="ajuste">Comandos</button>
+                    <button onclick="trocar('bootstrapcss')" id="ajuste">Bootstrap</button>
+                </div>
+            </div>
+            <div id="conceitocss" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p><strong class="destaque">CSS</strong> (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de documentos escritos em HTML ou XML. CSS permite separar o conteúdo da apresentação visual, proporcionando um <strong class="destaque">controle mais preciso sobre a aparência e o layout das páginas web</strong>. Vale destacar que <strong class="destaque">CSS não é classificada como uma linguagem de programação</strong>.</p>
+                <h3>Aplicações</h3>
+                <p>CSS é utilizado em uma ampla gama de contextos devido à sua capacidade de controlar a apresentação visual de documentos web:</p>
+                <ul>
+                    <li><strong class="destaque">Design de Websites:</strong> Estilização de páginas web para melhorar a aparência e a usabilidade.</li>
+                    <li><strong class="destaque">Aplicações Web:</strong> Criação de interfaces de usuário responsivas e atraentes para aplicativos web.</li>
+                    <li><strong class="destaque">Tematização:</strong> Desenvolvimento de temas para sistemas de gerenciamento de conteúdo (CMS) como WordPress, Joomla e Drupal.</li>
+                    <li><strong class="destaque">Animações e Transições:</strong> Adição de efeitos visuais e animações a elementos web.</li>
+                    <li><strong class="destaque">Web Design Responsivo:</strong> Adaptação de layouts para diferentes dispositivos e tamanhos de tela.</li>
+                </ul>
+                <h3>Exemplos de Softwares para Estudar CSS</h3>
+                <table style="margin-top: -20px;">
+                    <tr>
+                        <td colspan="2">
+                            <h4><a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="overlay">
+                                <img src="imagens/HTML1.PNG" alt="Programação CSS - visual studio code" class="imgs" style="width: 45%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Benefícios da Programação em CSS</h3>
+                <ul>
+                    <li><strong class="destaque">Separação de Conteúdo e Estilo:</strong> Permite separar a estrutura HTML do estilo visual, facilitando a manutenção e a atualização do design.</li>
+                    <li><strong class="destaque">Consistência:</strong> Aplicação de estilos consistentes em múltiplas páginas usando um único arquivo CSS.</li>
+                    <li><strong class="destaque">Reutilização:</strong> Estilos podem ser reutilizados em diferentes partes do site, economizando tempo e esforço.</li>
+                    <li><strong class="destaque">Responsividade:</strong> Facilita a criação de layouts adaptáveis a diferentes dispositivos e tamanhos de tela.</li>
+                    <li><strong class="destaque">Controle Preciso:</strong> Permite controle detalhado sobre a apresentação visual, incluindo tipografia, cores, espaçamento, e layout.</li>
+                </ul>
+                <h3>Importância nos Dias Atuais</h3>
+                <p>CSS é uma ferramenta essencial para o desenvolvimento web moderno, permitindo criar experiências de usuário atraentes e funcionais. Com o crescimento do uso de dispositivos móveis, <strong class="destaque">CSS desempenha um papel crucial na criação de sites responsivos que se adaptam a diferentes tamanhos de tela e resoluções</strong>. Além disso, as novas funcionalidades introduzidas com CSS3, como animações, transições e Flexbox, ampliam as possibilidades de design e melhoram a interatividade das páginas web.</p>
+                <p><strong class="destaque">A capacidade de criar e manter estilos consistentes e a facilidade de adaptação a mudanças tornam o CSS uma habilidade fundamental para desenvolvedores web</strong>. A utilização de pré-processadores CSS, como Sass e LESS, também melhora a eficiência do desenvolvimento, introduzindo funcionalidades adicionais como variáveis, mixins e aninhamento.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
+            <div id="comandoscss" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p>Nesta seção você encontrará alguns dos comandos em CSS mais utilizados ao longo do curso de programação.</p>
+                <h3>Lista de Comandos</h3>
+                <h5>Comentários</h5>
+                <p><strong><span>/* */</span></strong> -> Comando usado para inserir comentários em linha única ou várias linhas.</p>
+                <h5>Espaçamentos</h5>
+                <p><strong><span>padding</span></strong> -> Comando para definir o espaçamento interno entre o conteúdo de um elemento e suas bordas. Pode ser especificado em pixels (px), porcentagens (%), em (em), rem (rem), etc.</p>
+                <p><strong><span>margin</span></strong> -> Comando para definir o espaçamento externo entre o elemento e os elementos ao seu redor.</p>
+                <p><strong><span>border</span></strong> -> Comando para definir as bordas de um elemento, que também afetam o espaçamento. Inclui largura, estilo e cor.</p>
+                <p><strong><span>line-height</span></strong> -> Comando para definir a altura da linha, que afeta o espaçamento vertical entre linhas de texto.</p>
+                <p><strong><span>letter-spacing</span></strong> -> Comando para definir o espaçamento entre letras em um texto.</p>
+                <p><strong><span>word-spacing</span></strong> -> Comando  para definir o espaçamento entre palavras em um texto.</p>
+                <h5>Textos</h5>
+                <p><strong><span>color</span></strong> -> Comando para definir a cor do texto.</p>
+                <p><strong><span>font-family</span></strong> -> Comando para definir a família da fonte para o texto.</p>
+                <p><strong><span>font-size</span></strong> -> Comando para definir o tamanho da fonte.</p>
+                <p><strong><span>font-weight</span></strong> -> Comando para definir a espessura da fonte.</p>
+                <p><strong><span>font-style</span></strong> -> Comando para definir o estilo da fonte (normal, itálico, oblíquo).</p>
+                <p><strong><span>text-decoration</span></strong> -> Comando que adiciona decorações ao texto (sublinhado, linha sobre o texto, linha através do texto).</p>
+                <p><strong><span>font-text-align</span></strong> -> Comando para definir o alinhamento horizontal do texto.</p>
+                <p><strong><span>font-indent</span></strong> -> Comando para definir a indentação da primeira linha de um parágrafo.</p>
+                <h5>Fundos de Telas</h5>
+                <p><strong><span>background-color</span></strong> -> Comando para definir a cor de fundo de um elemento.</p>
+                <p><strong><span>background-image</span></strong> -> Comando para definir uma imagem de fundo para um elemento.</p>
+                <p><strong><span>background-repeat</span></strong> -> Comando para definir como uma imagem de fundo deve ser repetida.</p>
+                <p><strong><span>background-position</span></strong> -> Comando para definir a posição inicial de uma imagem de fundo.</p>
+                <p><strong><span>background-size</span></strong> -> Comando para definir o tamanho da imagem de fundo.</p>
+                <p><strong><span>background-attachment</span></strong> -> Comando que define se a imagem de fundo deve rolar com o resto da página ou ser fixa.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
+            <div id="bootstrapcss" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p><strong class="destaque">Bootstrap é um framework front-end open-source desenvolvido para facilitar a criação de sites e aplicações web responsivos</strong> e esteticamente agradáveis. Ele fornece um conjunto de ferramentas, incluindo estilos CSS e componentes JavaScript, que ajudam os desenvolvedores a construir interfaces web rapidamente e com consistência.</p>
+                <h3>Aplicações</h3>
+                <p>Bootstrap é amplamente utilizado em uma variedade de contextos devido à sua capacidade de acelerar o desenvolvimento e garantir a consistência do design:</p>
+                <ul>
+                    <li><strong class="destaque">Desenvolvimento de Sites:</strong> Criação rápida de páginas web responsivas e visualmente atraentes para blogs, portfólios e sites corporativos.</li>
+                    <li><strong class="destaque">Aplicações Web:</strong> Desenvolvimento de interfaces para aplicações web, desde dashboards até sistemas de gerenciamento de conteúdo.</li>
+                    <li><strong class="destaque">Prototipagem:</strong> Construção de protótipos de interfaces de usuário para testes e validação antes do desenvolvimento completo.</li>
+                    <li><strong class="destaque">Desenvolvimento Móvel:</strong> Criação de layouts adaptáveis que funcionam bem em dispositivos móveis e desktops.</li>
+                </ul>
+                <h3>Site para Aprender Bootstrap</h3>
+                <table style="margin-top: -20px;">
+                    <tr>
+                        <td colspan="2">
+                            <h4><a href="https://getbootstrap.com" target="_blank">Bootstrap</a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="overlay">
+                                <img src="imagens/Bootstrap1.PNG" alt="Programação CSS - bootstrap" class="imgs" style="width: 45%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Inserindo Bootstrap no seu Código</h3>
+                <p>Para facilitar o uso de Bootstrap em seu site, foi incluído um botão a seguir com o código para inserção do mesmo. Ao clicar no botão, o código correspondente será automaticamente copiado para a sua área de transferência, permitindo que você o cole facilmente em seu editor ou projeto.</p>
+                <p id="id-cópia" style="display: none;">
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"&gt;
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"&gt;&lt;/script&gt;
+                </p>
+                <button class="botão-copiar" onclick="copiar()">CDN via jsDelivr - Bootstrap &#x1F4CB;</button>
+
+                <h3>Benefícios do Bootstrap</h3>
+                <ul>
+                    <li><strong class="destaque">Desenvolvimento Rápido:</strong> Facilita a criação de layouts e componentes com menos esforço e em menos tempo, graças aos estilos e componentes pré-construídos.</li>
+                    <li><strong class="destaque">Design Responsivo:</strong> Fornece uma grid system e componentes que se adaptam a diferentes tamanhos de tela, garantindo uma boa aparência em dispositivos móveis e desktops.</li>
+                    <li><strong class="destaque">Consistência:</strong> Oferece um conjunto de estilos e componentes consistentes, promovendo uma aparência uniforme em toda a aplicação ou site.</li>
+                    <li><strong class="destaque">Customização:</strong> Permite a personalização através de variáveis e temas, adaptando o design às necessidades específicas do projeto.</li>
+                    <li><strong class="destaque">Comunidade Ativa:</strong> Tem uma grande comunidade e um vasto ecossistema de plugins e extensões, facilitando a resolução de problemas e a expansão de funcionalidades.</li>
+                </ul>
+                <h3>Importância nos Dias Atuais</h3>
+                <p>Bootstrap continua a ser uma ferramenta essencial no desenvolvimento web moderno devido à sua <strong class="destaque">capacidade de simplificar o processo de criação de interfaces de usuário</strong>. Com a evolução das tecnologias web, Bootstrap se adaptou e melhorou, oferecendo suporte a novas práticas e padrões de design. <strong class="destaque">A facilidade de uso e a flexibilidade tornam-no uma escolha popular tanto para iniciantes quanto para desenvolvedores experientes</strong>, ajudando a criar sites e aplicações web que são visualmente atraentes e funcionais.</p>
+                <p>A adoção de Bootstrap facilita a criação de projetos com uma base sólida e permite que os desenvolvedores se concentrem em aspectos mais específicos e personalizados do design, economizando tempo e recursos.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
         </div>
         <div id="javascript" class="linguagem">
             <h2>JavaScript</h2>

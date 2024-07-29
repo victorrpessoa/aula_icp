@@ -39,4 +39,14 @@ $(document).ready(function(){
         $('footer').css("width", "100vw");
         $('footer').css("margin", "-10px 0px -10px -13px");
     });
+
+    // Comando para copiar o texto para a área de transferência
+    $('.botão-copiar').click(function() {
+        const text = $('#id-cópia').text();
+        const tempInput = $('<textarea>').val(text).appendTo('body');
+        tempInput.select();
+        document.execCommand('copy');
+        tempInput.remove();
+        $(this).text("Copiado com Sucesso \u{2714}");
+    });
 });
