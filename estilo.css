@@ -37,6 +37,42 @@ header p {
     margin: auto;
     width: 85%;
 }
+main {
+    background-color: var(--cor0);
+    margin: auto;
+    padding: 5px 15px 0px 15px;
+    width: 85%;
+}
+main a {
+    text-decoration: none;
+}
+p {
+    font-family: Texto;
+    line-height: 1.4em;
+    text-align: justify;
+    text-indent: 2em;
+}
+.destaque {
+    color: var(--cor2);
+}
+.linguagem {
+    display: none;
+}
+.conteudo {
+    display: none;
+}
+.linguagens button {
+    margin: 3px 1px 3px 1px;
+    width: 135px;
+    padding: 10px;
+    cursor: pointer;
+}
+.conteudos button {
+    margin: 3px 1px 3px 1px;
+    width: 135px;
+    padding: 10px;
+    cursor: pointer;
+}
 h1 {
     padding: 10px;
     font-family: Título;
@@ -64,6 +100,13 @@ h4 {
     font-family: Título;
     font-size: 1.1em;
 }
+h4 a {
+    padding: 3px;
+    font-size: 0.8em;
+    color: var(--cor5);
+    background-color: var(--cor8);
+    border: 3px outset black;
+}
 h5 {
     width: 50%;
     margin: auto;
@@ -75,37 +118,12 @@ h5 {
     color: var(--cor0);
     background-image: linear-gradient(90deg, var(--cor11), var(--cor12));
 }
-p {
-    font-family: Texto;
-    line-height: 1.4em;
-    text-align: justify;
-    text-indent: 2em;
-}
 ul {
     width: 80%;
     font-family: Texto;
     line-height: 1.4em;
     text-align: justify;
     list-style-type: '\2716\00A0\00A0';
-}
-h4 a {
-    padding: 3px;
-    font-size: 0.8em;
-    color: var(--cor5);
-    background-color: var(--cor8);
-    border: 3px outset black;
-}
-.destaque {
-    color: var(--cor2);
-}
-main {
-    background-color: var(--cor0);
-    margin: auto;
-    padding: 5px 15px 0px 15px;
-    width: 85%;
-}
-main a {
-    text-decoration: none;
 }
 button {
     font-family: Texto;
@@ -119,6 +137,13 @@ button {
 }
 button:hover, button:active {
     background-color: var(--cor10);
+}
+.voltar {
+    display: block;
+    margin: auto;
+    width: 135px;
+    padding: 10px;
+    cursor: pointer;
 }
 table, td {
     text-align: center;
@@ -152,24 +177,6 @@ table, td {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-.linguagem {
-    display: none;
-}
-.conteudo {
-    display: none;
-}
-.linguagens button {
-    margin: 3px 1px 3px 1px;
-    width: 135px;
-    padding: 10px;
-    cursor: pointer;
-}
-.conteudos button {
-    margin: 3px 1px 3px 1px;
-    width: 135px;
-    padding: 10px;
-    cursor: pointer;
-}
 pre {
     width: 95%;
     margin: auto;
@@ -193,7 +200,32 @@ span {
 .azul {
     color: rgb(42, 131, 134);
 }
-.botão-copiar {
+.azul_escuro {
+    color: rgb(85, 126, 209);
+    background-color: rgb(36, 36, 36);
+}
+.azul_claro {
+    color: rgb(122, 168, 192);
+    background-color: rgb(36, 36, 36);
+}
+.verde_claro {
+    color: rgb(167, 206, 183);
+    background-color: rgb(36, 36, 36);
+}
+.amarelo_escuro {
+    color: rgb(217, 167, 30);
+    background-color: rgb(36, 36, 36);
+}
+.amarelo_claro {
+    color: rgb(235, 205, 145);
+    background-color: rgb(36, 36, 36);
+}
+.branco {
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+
+}
+.botão-copiar-css, .botão-copiar-js {
     display: block;
     margin: auto;
     padding: 6px;
@@ -207,15 +239,8 @@ span {
     transition-duration: 0.2s;
     cursor: pointer;
 }
-.botão-copiar:hover {
+.botão-copiar-css:hover, .botão-copiar-js:hover {
     background-color: var(--cor10);
-}
-.voltar {
-    display: block;
-    margin: auto;
-    width: 135px;
-    padding: 10px;
-    cursor: pointer;
 }
 footer {
     width: 100%;

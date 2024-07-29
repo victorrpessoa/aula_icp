@@ -32,6 +32,25 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: 0}, 500);       
     });
 
+    // Comando para copiar o texto para a área de transferência
+    $('.botão-copiar-css').click(function() {
+        const text = $('#id-cópia-css').text();
+        const tempInput = $('<textarea>').val(text).appendTo('body');
+        tempInput.select();
+        document.execCommand('copy');
+        tempInput.remove();
+        $(this).text("Copiado com Sucesso \u{2714}");
+    });
+
+    $('.botão-copiar-js').click(function() {
+        const text = $('#id-cópia-js').text();
+        const tempInput = $('<textarea>').val(text).appendTo('body');
+        tempInput.select();
+        document.execCommand('copy');
+        tempInput.remove();
+        $(this).text("Copiado com Sucesso \u{2714}");
+    });
+
     // Ajuste do padding ao clicar no botão de alguma linguagem
     $('#ajuste').click(function(){
         $('main').css("padding", "5px 15px 30px 15px");
@@ -39,14 +58,9 @@ $(document).ready(function(){
         $('footer').css("width", "100vw");
         $('footer').css("margin", "-10px 0px -10px -13px");
     });
-
-    // Comando para copiar o texto para a área de transferência
-    $('.botão-copiar').click(function() {
-        const text = $('#id-cópia').text();
-        const tempInput = $('<textarea>').val(text).appendTo('body');
-        tempInput.select();
-        document.execCommand('copy');
-        tempInput.remove();
-        $(this).text("Copiado com Sucesso \u{2714}");
-    });
 });
+
+var n1 = 10;
+var n2 = 5;
+var produto = n1 * n2;
+console.log(produto);
