@@ -232,6 +232,22 @@ span {
     color: rgb(180, 108, 63);
     background-color: rgb(36, 36, 36);
 }
+.ciano {
+    color: rgb(135, 190, 233);
+    background-color: rgb(36, 36, 36);
+}
+.laranja_claro {
+    color: rgb(211, 126, 46);
+    background-color: rgb(36, 36, 36);
+}
+.roxo {
+    color: rgb(135, 132, 194);
+    background-color: rgb(36, 36, 36);
+}
+.verde_escuro {
+    color: rgb(99, 128, 83);
+    background-color: rgb(36, 36, 36);
+}
 .botão-copiar-css, .botão-copiar-js {
     display: block;
     margin: auto;
@@ -248,6 +264,12 @@ span {
 }
 .botão-copiar-css:hover, .botão-copiar-js:hover {
     background-color: var(--cor10);
+}
+section {
+    margin: auto;
+    width: 85%; 
+    padding: 15px;
+    color: var(--cor0);
 }
 footer {
     width: 100%;
