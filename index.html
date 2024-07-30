@@ -573,9 +573,9 @@
                 <p>Logo abaixo você verá um exemplo de programa escrito em JavaScript para calcular o produto entre dois números predefinidos. O resultado dessa operação será mostrado no console da página:</p>
                 <pre style="background-color: rgb(36, 36, 36);">
 
-    <span class="azul_escuro">var</span> <span class="azul_claro">n1</span> <span class="branco">=</span> <span class="verde_claro">10</span><span class="branco">;</span>
-    <span class="azul_escuro">var</span> <span class="azul_claro">n2</span> <span class="branco">=</span> <span class="verde_claro">5</span><span class="branco">;</span>
-    <span class="azul_escuro">var</span> <span class="azul_claro">produto</span> <span class="branco">=</span> <span class="azul_claro">n1</span> <span class="branco">*</span> <span class="azul_claro">n2</span><span class="branco">;</span>
+    <span class="azul_escuro">var</span><span class="azul_claro">n1</span><span class="branco">=</span><span class="verde_claro">10</span><span class="branco">;</span>
+    <span class="azul_escuro">var</span><span class="azul_claro">n2</span><span class="branco">=</span><span class="verde_claro">5</span><span class="branco">;</span>
+    <span class="azul_escuro">var</span><span class="azul_claro">produto</span><span class="branco">=</span><span class="azul_claro">n1</span><span class="branco">*</span><span class="azul_claro">n2</span><span class="branco">;</span>
     <span class="azul_claro">console</span><span class="branco">.</span><span class="amarelo_claro">log</span><span class="amarelo_escuro">(</span><span class="azul_claro">produto</span><span class="amarelo_escuro">)</span><span class="branco">;</span>
                 </pre>
                 <h3>Lista de Comandos</h3>
@@ -585,16 +585,169 @@
                 <p><strong><span>console.log</span></strong> -> Usado para imprimir mensagens no console do navegador, o que é útil para depuração e monitoramento de variáveis e fluxos de execução no código.</p>
                 <p><strong><span>confirm</span></strong> -> Exibe uma caixa de diálogo com uma mensagem e dois botões: "OK" e "Cancelar". Retorna "true" se o usuário clicar em "OK" e "false" se clicar em "Cancelar".</p>
                 <p><strong><span>alert</span></strong> -> Exibe uma caixa de diálogo com uma mensagem e um botão "OK". Pausa a execução do script até que o usuário feche a caixa de diálogo.</p>
+                <h5>Variáveis</h5>
+                <p><strong><span>var</span></strong> -> Usado para declarar variáveis com escopo global. Esse tipo de variável pode ser usada em qualquer lugar do código.</p>
+                <p><strong><span>let</span></strong> -> Usado para declarar variáveis com escopo local. Esse tipo de variável é usada geralmente dentro de funções.</p>
+                <p><strong><span>const</span></strong> -> Usado para declarar variáveis com valor constante. Pode ser usada em qualquer local do código, mas não podem ser modificadas após sua criação.</p>
+                <p><strong><span>prompt</span></strong> -> Exibe uma caixa de diálogo com uma mensagem opcional, solicitando que o usuário insira algum texto.</p>
+                <h5>Concatenação</h5>
+                <p><strong><span>+</span></strong> -> Método mais comum e simples para concatenar strings.</p>
+                <h5>Condicionais</h5>
+                <p><strong><span>if</span></strong> -> Usada para executar um bloco de código se uma condição específica for verdadeira.</p>
+                <p><strong><span>else if</span></strong> -> Permite verificar múltiplas condições. É usada após um "if" inicial e antes de um "else".</p>
+                <p><strong><span>else</span></strong> -> Usada para executar um bloco de código se nenhuma das condições anteriores for verdadeira.</p>
+                <h5>Repetições</h5>
+                <p><strong><span>for</span></strong> -> Usada para executar um bloco de código um número específico de vezes. É particularmente útil quando você sabe com antecedência quantas vezes deseja executar o bloco de código. Essa estrutura consiste em três partes: inicialização, condição e incremento.
+                <h5>Funções</h5>
+                <p><strong><span>function</span></strong> -> Funções são blocos de código reutilizáveis que executam uma tarefa específica. Podem aceitar entradas (parâmetros) e retornar um valor.</p>
                 <button class="voltar">Voltar ao topo</button>
             </div>
         </div>
-        <div id="php" class="linguagem">
+        <div id="php" class="linguagem" style="margin-top: -25px;">
             <h2>PHP</h2>
-            <p>Conteúdo sobre a Linguagem 6...</p>
+            <div class="conteudos" style="padding-bottom: 30px;">
+                <div style="text-align: center;">
+                    <button onclick="trocar('conceitophp')" id="ajuste">Conceito</button>
+                    <button onclick="trocar('comandosphp')" id="ajuste">Comandos</button>
+                </div>
+            </div>
+            <div id="conceitophp" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p><strong class="destaque">PHP</strong> (Hypertext Preprocessor) é uma linguagem de script de propósito geral amplamente usada, <strong class="destaque">especialmente adequada para o desenvolvimento web</strong>. Originalmente criada para a criação de páginas web dinâmicas, <strong class="destaque">PHP evoluiu para uma linguagem poderosa que roda no servidor</strong>, capaz de fazer uma vasta gama de tarefas de <strong class="destaque">backend</strong>.</p>
+                <h3>Aplicações</h3>
+                <p>PHP é utilizado em diversas áreas do desenvolvimento web, incluindo:</p>
+                <ul>
+                    <li><strong class="destaque">Desenvolvimento de Sites Dinâmicos:</strong> Criação de páginas web que interagem com bancos de dados e respondem a ações dos usuários.</li>
+                    <li><strong class="destaque">Sistemas de Gestão de Conteúdo (CMS):</strong> Plataformas como WordPress, Joomla e Drupal são construídas em PHP.</li>
+                    <li><strong class="destaque">Aplicações Web:</strong> Desenvolvimento de aplicações web completas, como fóruns, redes sociais, plataformas de e-commerce, entre outros.</li>
+                    <li><strong class="destaque">APIs:</strong> Criação de APIs para comunicação entre diferentes sistemas e serviços.</li>
+                    <li><strong class="destaque">Automação de Tarefas:</strong> Scripts para automação de processos no servidor.</li>
+                </ul>
+                <h3>Exemplos de Softwares para Estudar PHP</h3>
+                <table style="margin-top: -20px;">
+                    <tr>
+                        <td colspan="2">
+                            <h4><a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="overlay">
+                                <img src="imagens/HTML1.PNG" alt="Programação PHP - visual studio code" class="imgs" style="width: 45%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Benefícios da Programação em PHP</h3>
+                <ul>
+                    <li><strong class="destaque">Facilidade de Aprendizado:</strong> PHP é relativamente fácil de aprender, especialmente para iniciantes, devido à sua sintaxe simples e extensa documentação.</li>
+                    <li><strong class="destaque">Ampla Adoção:</strong> PHP é uma das linguagens mais usadas no desenvolvimento web, com uma vasta comunidade de desenvolvedores e muitos recursos disponíveis.</li>
+                    <li><strong class="destaque">Integração com Bancos de Dados:</strong> PHP possui suporte integrado para uma variedade de bancos de dados, incluindo MySQL, PostgreSQL e SQLite.</li>
+                    <li><strong class="destaque">Desempenho:</strong> PHP é otimizado para criar páginas web rapidamente e pode ser usado para desenvolver aplicações escaláveis.</li>
+                    <li><strong class="destaque">Open Source:</strong> PHP é gratuito e open source, o que significa que há uma grande quantidade de bibliotecas e frameworks disponíveis para uso.</li>
+                    <li><strong class="destaque">Frameworks:</strong> Frameworks populares como Laravel, Symfony e CodeIgniter facilitam e agilizam o desenvolvimento de aplicações web complexas.</li>
+                </ul>
+                <h3>Importância nos Dias Atuais</h3>
+                <p>PHP continua a ser uma escolha popular para o desenvolvimento web devido à sua <strong class="destaque">flexibilidade e capacidade de se integrar facilmente com HTML, CSS e JavaScript</strong>. Muitas grandes plataformas e sites, incluindo Facebook (em suas fases iniciais), WordPress, e Wikipedia, foram construídos usando PHP.</p>
+                <p>O ecossistema de PHP, incluindo seu suporte a frameworks poderosos e ferramentas de desenvolvimento, permite que os desenvolvedores criem aplicações web robustas e escaláveis de maneira eficiente. Com a evolução contínua e melhorias na linguagem, <strong class="destaque">PHP permanece relevante e amplamente utilizado no desenvolvimento web moderno</strong>.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
+            <div id="comandosphp" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p>Nesta seção você encontrará alguns dos comandos em PHP mais utilizados ao longo do curso de programação.</p>
+                <p>Logo abaixo você verá um exemplo de programa escrito em PHP para verificar a paridade de um número predefinido:</p>
+                <pre style="background-color: rgb(36, 36, 36);">
+
+    <span class="azul_claro">$num</span><span class="branco">=</span><span class="verde_claro">42</span><span class="branco">;</span>
+    <span class="rosa">if</span><span class="amarelo_escuro">(</span><span class="azul_claro">$num</span><span class="branco">%</span><span class="verde_claro">2</span><span class="branco">==</span><span class="verde_claro">0</span><span class="amarelo_escuro">)</span><span class="amarelo_escuro">{</span>
+        <span class="amarelo_claro">echo</span><span class="laranja_escuro">"O número</span><span class="azul_claro">$num</span><span class="laranja_escuro">é par"</span><span class="branco">;</span>
+    <span class="amarelo_escuro">}</span><span class="rosa">else</span><span class="amarelo_escuro">{</span>
+        <span class="amarelo_claro">echo</span><span class="laranja_escuro">"O número</span><span class="azul_claro">$num</span><span class="laranja_escuro">é ímpar"</span><span class="branco">;</span>
+    <span class="amarelo_escuro">}</span>
+                </pre>
+                <h3>Lista de Comandos</h3>
+                <h5>Comentários</h5>
+                <p><strong><span>//, # ou /* */</span></strong> -> Use "//" ou "#" para inserir comentários de linha única. Use "/* */" para inserir comentários em várias linhas.</p>
+                <h5>Mensagens</h5>
+                <p><strong><span>echo</span></strong> -> É uma construção de linguagem (não uma função), usada para exibir um ou mais parâmetros na tela. Não retorna valor, apenas exibe a saída.</p>
+                <p><strong><span>print</span></strong> -> É uma função que também é usada para exibir dados na tela, mas com a diferença de que retorna um valor. Menos eficiente que o comando "echo" para a exibição de múltiplos parâmetros, pois é uma função.</p>
+                <h5>Variáveis</h5>
+                <p><strong><span>$</span></strong> -> Variáveis em PHP devem começar com o símbolo "$", seguido por uma letra (a-z, A-Z) ou um sublinhado "_". Os caracteres seguintes podem ser letras, números (0-9) ou sublinhados. São sensíveis a maiúsculas e minúsculas.</p>
+                <h5>Superglobais</h5>
+                <p><strong><span>$_GET</span></strong> -> Contém dados enviados pelo método HTTP GET, geralmente via query string na URL. Usado para enviar dados simples e não sensíveis que devem ser visíveis na URL.</p>
+                <p><strong><span>$_POST</span></strong> -> Contém dados enviados pelo método HTTP POST, geralmente de formulários HTML. Usado para enviar dados de maneira mais segura do que o método GET, pois os dados não são visíveis na URL.</p>
+                <p><strong><span>$_SERVER</span></strong> -> Contém informações sobre o servidor e o ambiente de execução do script PHP. Fornece dados sobre o servidor, cabeçalhos HTTP, informações do script e mais.</p>
+                <p><strong><span>$_SESSION</span></strong> -> Contém variáveis associadas à sessão do usuário, que permanecem disponíveis durante a navegação entre páginas. Usado para armazenar dados que devem persistir durante a sessão do usuário.</p>
+                <h5>Concatenação</h5>
+                <p><strong><span>.</span></strong> -> Usado para combinar (ou concatenar) várias strings e variáveis em uma única string. É uma operação explícita onde você deve usar o operador para unir as partes.</p>
+                <p><strong><span>"</span></strong> -> As aspas duplas permitem a interpolação de variáveis diretamente dentro da string. O PHP substitui as variáveis pelo seu valor dentro da string entre aspas duplas. Variáveis são diretamente embutidas na string.</p>
+                <h5>Condicionais</h5>
+                <p><strong><span>if</span></strong> -> Usada para executar um bloco de código se uma condição específica for verdadeira.</p>
+                <p><strong><span>else if</span></strong> -> Permite verificar múltiplas condições. É usada após um "if" inicial e antes de um "else".</p>
+                <p><strong><span>else</span></strong> -> Usada para executar um bloco de código se nenhuma das condições anteriores for verdadeira.</p>
+                <h5>Repetições</h5>
+                <p><strong><span>for</span></strong> -> Usada para executar um bloco de código um número específico de vezes. É particularmente útil quando você sabe com antecedência quantas vezes deseja executar o bloco de código. Essa estrutura consiste em três partes: inicialização, condição e incremento.
+                <h5>Funções</h5>
+                <p><strong><span>function</span></strong> -> Funções são blocos de código reutilizáveis que executam uma tarefa específica. Podem aceitar entradas (parâmetros) e retornar um valor.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
         </div>
-        <div id="mysql" class="linguagem">
+        <div id="mysql" class="linguagem" style="margin-top: -25px;">
             <h2>MySQL</h2>
-            <p>Conteúdo sobre a Linguagem 7...</p>
+            <div class="conteudos" style="padding-bottom: 30px;">
+                <div style="text-align: center;">
+                    <button onclick="trocar('conceitosql')" id="ajuste">Conceito</button>
+                    <button onclick="trocar('comandossql')" id="ajuste">Comandos</button>
+                </div>
+            </div>
+            <div id="conceitosql" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p><strong class="destaque">MySQL é um sistema de gerenciamento de banco de dados</strong> relacional (RDBMS) de código aberto amplamente utilizado para armazenar e gerenciar dados. É uma parte fundamental do stack <strong class="destaque">LAMP</strong> (Linux, Apache, MySQL, PHP/Python/Perl), que é <strong class="destaque">popular para o desenvolvimento de aplicações web</strong>.</p>
+                <h3>Aplicações</h3>
+                <p>MySQL é amplamente utilizado em diversos contextos, incluindo:</p>
+                <ul>
+                    <li><strong class="destaque">Desenvolvimento Web:</strong> Armazenamento e gerenciamento de dados para sites e aplicações web, frequentemente em combinação com PHP.</li>
+                    <li><strong class="destaque">Aplicações Empresariais:</strong> Utilizado para gerenciar dados empresariais, como informações de clientes, produtos e transações.</li>
+                    <li><strong class="destaque">Sistemas de Gerenciamento de Conteúdo (CMS):</strong> Back-end para plataformas como WordPress, Joomla e Drupal.</li>
+                    <li><strong class="destaque">Sistemas de E-commerce:</strong> Gerenciamento de dados de produtos, pedidos e clientes para lojas online.</li>
+                    <li><strong class="destaque">Data Warehousing:</strong> Armazenamento e análise de grandes volumes de dados.</li>
+                </ul>
+                <h3>phpMyAdmin</h3>
+                <p><strong class="destaque">phpMyAdmin é uma ferramenta de código aberto escrita em PHP que permite aos usuários gerenciar bancos de dados MySQL de forma gráfica através de uma interface web</strong>. É uma solução popular para administradores de banco de dados que preferem uma interface visual em vez de executar comandos SQL diretamente.</p>
+                <h3>Exemplos de Softwares para Estudar MySQL</h3>
+                <table style="margin-top: -20px;">
+                    <tr>
+                        <td colspan="2">
+                            <h4><a href="https://www.apachefriends.org/pt_br/index.html" target="_blank">Apache Friends</a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="overlay">
+                                <img src="imagens/MySQL1.PNG" alt="Programação MySQL - apache friends" class="imgs" style="width: 45%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Benefícios do MySQL</h3>
+                <ul>
+                    <li><strong class="destaque">Desempenho:</strong> MySQL é conhecido por seu rápido desempenho, especialmente em operações de leitura, e pode gerenciar grandes volumes de dados com eficiência.</li>
+                    <li><strong class="destaque">Escalabilidade:</strong> Capaz de lidar com grandes quantidades de dados e usuários simultâneos, tornando-o adequado para aplicações de pequeno a grande porte.</li>
+                    <li><strong class="destaque">Flexibilidade:</strong> Suporte para diferentes tipos de armazenamento e otimização de consultas.</li>
+                    <li><strong class="destaque">Segurança:</strong> Oferece recursos robustos de segurança, incluindo controle de acesso e criptografia.</li>
+                    <li><strong class="destaque">Comunidade e Suporte:</strong> Possui uma grande comunidade de usuários e desenvolvedores, além de suporte oficial da Oracle.</li>
+                </ul>
+                <h3>Importância nos Dias Atuais</h3>
+                <p>MySQL é amplamente adotado em ambientes de desenvolvimento e produção devido à sua confiabilidade e facilidade de uso. <strong class="destaque">A integração com linguagens de programação como PHP, Python e Java faz do MySQL uma escolha popular para aplicações web e sistemas empresariais</strong>. Sua capacidade de escalar e gerenciar grandes volumes de dados continua a ser um ativo valioso para desenvolvedores e empresas em todo o mundo.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
+            <div id="comandossql" class="conteudo" style="margin-top: -25px;">
+                <h3>Introdução</h3>
+                <p>Nesta seção você encontrará alguns dos comandos em MySQL mais utilizados ao longo do curso de programação.</p>
+                <h3>Lista de Comandos</h3>
+                <p><strong><span>INSERT INTO</span></strong> -> Usado para adicionar uma nova linha (registro) a uma tabela existente no banco de dados.</p>
+                <button class="voltar">Voltar ao topo</button>
+            </div>
         </div>
         <div id="python" class="linguagem">
             <h2>Python</h2>

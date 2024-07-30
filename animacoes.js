@@ -59,8 +59,3 @@ $(document).ready(function(){
         $('footer').css("margin", "-10px 0px -10px -13px");
     });
 });
-
-var n1 = 10;
-var n2 = 5;
-var produto = n1 * n2;
-console.log(produto);
