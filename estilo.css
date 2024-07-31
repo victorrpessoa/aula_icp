@@ -277,7 +277,7 @@ section {
 footer {
     width: 100%;
     margin: 0px 0px 0px -9px;
-    padding: 1px;
+    padding: 2px;
     position: fixed;
     bottom: 0;
     background-color: var(--cor7);
