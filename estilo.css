@@ -272,12 +272,12 @@ section {
     color: var(--cor0);
 }
 .seção {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 footer {
     width: 100%;
     margin: 0px 0px 0px -9px;
-    padding: 5px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     background-color: var(--cor7);
@@ -289,7 +289,7 @@ footer > p {
     max-width: 600px;
     margin: auto;
     font-family: Texto;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 2em;
     text-align: center;
     text-indent: 0em;

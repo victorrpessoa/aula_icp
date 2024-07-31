@@ -54,9 +54,6 @@ $(document).ready(function(){
     // Ajuste do padding ao clicar no botão de alguma linguagem
     $('button').click(function(){
         $('main').css("padding", "5px 15px 30px 15px");
-        $('.seção').css("margin-bottom", "5px")
-        $('footer').css("position", "relative");
-        $('footer').css("width", "100vw");
-        $('footer').css("margin", "-10px 0px -10px -13px");
+        $('.seção').css("margin-bottom", "25px");
     });
 });
