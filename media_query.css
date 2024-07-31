@@ -17,6 +17,9 @@ Grandes telas: acima de 1280px
     main {
         width: 70%;
     }
+    h5 {
+        width: 30%;
+    }
     li {
         width: 96%;
     }
@@ -31,6 +34,9 @@ Grandes telas: acima de 1280px
     }
     main {
         width: 55%;
+    }
+    h5 {
+        width: 25%;
     }
     .largurabtn {
         width: 60%;
